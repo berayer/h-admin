@@ -23,6 +23,7 @@ request.interceptors.request.use((config) => {
  */
 request.interceptors.response.use(
   (res) => {
+    console.log(res)
     // 200 响应直接返回成功结果
     if (res.data && res.data.code == 200) {
       return res.data

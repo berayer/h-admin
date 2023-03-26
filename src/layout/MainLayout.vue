@@ -4,9 +4,13 @@ import GlobalHeader from './globalHeader/GlobalHeader.vue'
 import GlobalContent from './globalContent/GlobalContent.vue'
 import { api_index } from '@/api'
 
-api_index().then((res) => {
-  console.log(res)
-})
+api_index()
+  .then((res) => {
+    console.log(res)
+  })
+  .catch((err) => {
+    console.log(err)
+  })
 </script>
 
 <template>
