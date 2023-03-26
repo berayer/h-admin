@@ -5,3 +5,11 @@ interface Window {
   $notification: import('naive-ui').NotificationProviderInst
   isLoading: boolean
 }
+
+interface GlobalMenu {
+  id: number
+  path: string
+  label: string
+  icon?: string
+  children?: GlobalMenu[]
+}

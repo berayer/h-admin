@@ -27,6 +27,8 @@ module.exports = {
     // 关闭vue组件的名称检测
     'vue/multi-word-component-names': 'off',
     // 关闭未定义报错,typescript自带检测
-    'no-undef': 'off'
+    'no-undef': 'off',
+    // 关闭非空断言符!使用报错
+    '@typescript-eslint/no-non-null-assertion': 'off'
   }
 }

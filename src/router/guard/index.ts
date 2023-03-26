@@ -6,6 +6,7 @@ import type { Router } from 'vue-router'
  */
 export function createRouterGuard(router: Router) {
   router.beforeEach(async (to, from, next) => {
+    console.log("123")
     if (!window.isLoading) {
       // 加载启动动画
       window.isLoading = true

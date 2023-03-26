@@ -11,10 +11,10 @@ export function api_login(data: any) {
 }
 
 /**
- * 登陆之后首页获取用户菜单和用户信息接口
+ * 获取用户菜单
  */
-export function api_index() {
+export function api_userMenus() {
   return http({
-    url: '/index'
+    url: '/menu'
   })
 }

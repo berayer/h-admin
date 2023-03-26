@@ -11,3 +11,4 @@ export function setupStore(app: App) {
 }
 
 export * from './app'
+export * from './tab'

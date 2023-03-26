@@ -18,7 +18,12 @@ export const constantRoutes: RouteRecordRaw[] = [
   },
   {
     path: '/index',
+    name: 'MainLayout',
     component: () => import('@/layout/MainLayout.vue')
+  },
+  {
+    path: '/404',
+    component: () => import('@/views/_base/404/index.vue')
   },
   {
     path: '/:path(.*)*',
